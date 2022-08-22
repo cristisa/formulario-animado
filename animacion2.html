@@ -5,6 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="animacion2.css" />
+    <style>p.pow, .pdcc-btn-slider{display: none;} .pdcc-btn-switch{margin-right: 60px!important}</style>
+    <link rel="stylesheet" href="{{ asset('/bundles/app/pdcc.min.css') }}">
     <script src="validacion2.js" defer></script>
     <title>Formulario Animado</title>
 </head>
@@ -41,5 +43,28 @@
             <h2 class="mensajeExito">¡El envío fue exitoso!</h2> 
         </div>    
     </div>
+    <script charset="utf-8" src="{{ asset('/bundles/app/pdcc.min.js') }}"></script>
+    <script type="text/javascript">
+            PDCookieConsent.config({
+                "brand": {
+                    "dev" : true,
+                    "name": "Empresa",
+                    "url" : "Link",
+                    "websiteOwner" : "Dueño de la empresa"
+                },
+                "cookiePolicyLink": "Link a políticas",
+                "hideModalIn": ["Link a políticas"],
+                "styles": {
+                    "primaryButton": {
+                        "bgColor" : "#004a98",
+                        "txtColor": "#ffffff"
+                    },
+                    "secondaryButton": {
+                        "bgColor" : "#EEEEEE",
+                        "txtColor": "#333333"
+                    }
+            }});
+    </script>
+
 </body>
 </html>

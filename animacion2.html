@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="animacion2.css" />
+    <script src="validacion2.js" defer></script>
+    <title>Formulario Animado</title>
+</head>
+<body>
+    <div class="container">
+        <div class="cajaSuscrip fadeInDown" id="caja">
+            <div class="onstart">
+                <img src="mujerEscribiendoTransp.png"/>
+            </div>
+
+            <h2 class="fadeIn prim">Únete a nuestra comunidad de Femcoders</h2>
+            <form action="" method="POST" id="form">
+                <div class="formUsuario fadeIn segun">
+                    <input type="text" id="nombre" name="" required=""/>
+                    <label for="">Nombre</label>
+                </div>
+                <div class="formUsuario fadeIn tercer">
+                    <input type="text" id="email" name="" required=""/>
+                    <label for="">Correo electrónico</label>
+                </div>
+                <span id="errorN"></span>
+                <span id="errorC"></span>
+                <p>Te enviaremos información sobre las últimas tendencias en el mundo de la programación. 
+                </p>
+                <a href="#"class="fadeIn cuarto" id="boton">¡Suscríbete!</a>
+            </form>
+        </div>
+        <div class="enviando" id="enviando"> 
+            <video autoplay playsinline muted defaultmuted id="miVideo"> 
+                <source src="exito.mp4" type="video/mp4"> 
+            </video>
+        </div>
+        <div class="mensajeEnviado" id="mensajeEnviado">
+            <h2 class="mensajeExito">¡El envío fue exitoso!</h2> 
+        </div>    
+    </div>
+</body>
+</html>
